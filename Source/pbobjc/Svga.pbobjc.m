@@ -14,6 +14,7 @@
 #endif
 
 #import "Svga.pbobjc.h"
+#import <stdatomic.h>
 // @@protoc_insertion_point(imports)
 
 #pragma clang diagnostic push
@@ -602,7 +603,8 @@ GPBEnumDescriptor *SVGAProtoShapeEntity_ShapeType_EnumDescriptor(void) {
                                            values:values
                                             count:(uint32_t)(sizeof(values) / sizeof(int32_t))
                                      enumVerifier:SVGAProtoShapeEntity_ShapeType_IsValidValue];
-        if (!OSAtomicCompareAndSwapPtrBarrier(nil, worker, (void * volatile *)&descriptor)) {
+        GPBEnumDescriptor *expected = nil;
+        if (!atomic_compare_exchange_strong((_Atomic(GPBEnumDescriptor *)*)&descriptor, &expected, worker)) {
             [worker release];
         }
     }
@@ -1021,7 +1023,8 @@ GPBEnumDescriptor *SVGAProtoShapeEntity_ShapeStyle_LineCap_EnumDescriptor(void) 
                                             count:(uint32_t)(sizeof(values) / sizeof(int32_t))
                                      enumVerifier:SVGAProtoShapeEntity_ShapeStyle_LineCap_IsValidValue
                               extraTextFormatInfo:extraTextFormatInfo];
-        if (!OSAtomicCompareAndSwapPtrBarrier(nil, worker, (void * volatile *)&descriptor)) {
+        GPBEnumDescriptor *expected = nil;
+        if (!atomic_compare_exchange_strong((_Atomic(GPBEnumDescriptor *)*)&descriptor, &expected, worker)) {
             [worker release];
         }
     }
@@ -1060,7 +1063,8 @@ GPBEnumDescriptor *SVGAProtoShapeEntity_ShapeStyle_LineJoin_EnumDescriptor(void)
                                             count:(uint32_t)(sizeof(values) / sizeof(int32_t))
                                      enumVerifier:SVGAProtoShapeEntity_ShapeStyle_LineJoin_IsValidValue
                               extraTextFormatInfo:extraTextFormatInfo];
-        if (!OSAtomicCompareAndSwapPtrBarrier(nil, worker, (void * volatile *)&descriptor)) {
+        GPBEnumDescriptor *expected = nil;
+        if (!atomic_compare_exchange_strong((_Atomic(GPBEnumDescriptor *)*)&descriptor, &expected, worker)) {
             [worker release];
         }
     }
