@@ -1,6 +1,6 @@
 
 Pod::Spec.new do |s|
-  s.name         = "SVGAPlayerKit"
+  s.name         = "SVGAPlayerLib"
   s.version      = "2.6.0"
   s.summary      = "SVGAPlayer 是一个高性能的动画播放器 (Fork 维护版)"
   s.description  = <<-DESC
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
     ss.dependency 'SSZipArchive', '>= 1.8.1'
     ss.library = "z"
     ss.framework = "AVFoundation"
-    ss.dependency 'SVGAPlayerKit/ProtoFiles'
+    ss.dependency 'SVGAPlayerLib/ProtoFiles'
   end
   s.subspec 'ProtoFiles' do |ss|
     ss.source_files  = "Source/pbobjc/*.{h,m}"
