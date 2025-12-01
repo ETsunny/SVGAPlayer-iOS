@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/ETsunny/SVGAPlayer-iOS"
   s.license      = "Apache 2.0"
-  s.author       = { "ETsunny" => "your-email@example.com" }
+  s.author       = { "Zahi" => "lzxetsunny@outlook.com" }
   s.platform     = :ios, "11.0"
   s.source       = { :git => "https://github.com/ETsunny/SVGAPlayer-iOS.git", :tag => s.version }
   s.subspec 'Core' do |ss|
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
     ss.dependency 'SSZipArchive', '>= 1.8.1'
     ss.library = "z"
     ss.framework = "AVFoundation"
-    ss.dependency 'SVGAPlayer/ProtoFiles'
+    ss.dependency 'SVGAPlayerKit/ProtoFiles'
   end
   s.subspec 'ProtoFiles' do |ss|
     ss.source_files  = "Source/pbobjc/*.{h,m}"
