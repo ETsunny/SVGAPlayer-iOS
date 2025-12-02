@@ -1,5 +1,9 @@
 # SVGAPlayer
 
+## 🎉 本仓库已恢复维护
+
+本仓库是原 [SVGAPlayer-iOS](https://github.com/svga/SVGAPlayer-iOS) 的 fork 版本，原仓库已停止维护。本仓库现已**恢复活跃维护**，欢迎提交 issue 和 pull request。
+
 ## 2.5.0 版本
 
 该版本增加了对遮罩图层和遮罩图片动态替换的支持。<br>
@@ -27,13 +31,17 @@
 
 ### 使用 CocoaPods 安装依赖
 
-添加依赖 'SVGAPlayer', '~> 2.3' 到 Podfile 文件中:
+添加以下内容到 Podfile 文件中:
 
+```ruby
 target 'MyApp' do
-  pod 'SVGAPlayer', '~> 2.3'
+  pod 'SVGAPlayerLib', '~> 2.6'
 end
+```
 
 然后在终端执行 `pod install`。
+
+> **注意:** Pod 名称已更改为 `SVGAPlayerLib`，以区分于原仓库。
 
 ### 放置 svga 文件
 

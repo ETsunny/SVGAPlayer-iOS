@@ -1,15 +1,14 @@
-# Archived
-本仓库已经停止维护，你仍然继续阅读源码及创建分叉，但本仓库不会继续更新，也不会回答任何 issue。
-
-This repo has stopped maintenance, you can still continue to read the source code and create forks, but this repo will not continue to be updated, nor will it answer any issues.
-
 # SVGAPlayer
 
 [简体中文](./readme.zh.md)
 
-## 支持本项目
+## 🎉 This Repository is Now Actively Maintained
 
-1. 轻点 GitHub Star，让更多人看到该项目。
+This is a fork of the original [SVGAPlayer-iOS](https://github.com/svga/SVGAPlayer-iOS) repository, which has been archived. This fork is now **actively maintained** and open to issues and pull requests.
+
+## Support This Project
+
+1. Give us a GitHub Star to help more people discover this project.
 
 ## 2.5.0 Released
 
@@ -38,13 +37,17 @@ Here introduce `SVGAPlayer-iOS` usage. Wonder exporting usage? Click [here](http
 
 ### Install Via CocoaPods
 
-You want to add pod 'SVGAPlayer', '~> 2.3' similar to the following to your Podfile:
+Add the following to your Podfile:
 
+```ruby
 target 'MyApp' do
-  pod 'SVGAPlayer', '~> 2.3'
+  pod 'SVGAPlayerLib', '~> 2.6'
 end
+```
 
-Then run a `pod install` inside your terminal, or from CocoaPods.app.
+Then run `pod install` in your terminal.
+
+> **Note:** The pod name has been changed to `SVGAPlayerLib` to distinguish from the original archived repository.
 
 ### Locate files
 
